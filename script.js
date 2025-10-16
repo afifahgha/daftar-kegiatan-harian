@@ -7,8 +7,10 @@ form.addEventListener("submit", function(event) {
     event.preventDefault(); 
     const itemText = input.value.trim();
     if (itemText === "") {
+        input.classList.remove('invalid','valid')
         errorMessage.textContent = "Field tidak boleh kosong"; 
         input.classList.add("invalid");
+        input.focus();
         return; 
     } else {
         errorMessage.textContent = ""; 

@@ -4,32 +4,46 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    min-height: 100vh;
-    margin: 0;
+    padding: 50px;
+    margin: 10;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: #ffffff;
+    padding: 10px 20px;
+    border-radius: 15px;
+    box-shadow:0 4px 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 500px;
 }
 
 h1 {
-    color: #313533;
-    margin: 20px;
+    text-align: center;
+    color: #181717;
+    margin-bottom: 20px;
 }
 
-#itemForm {
-    background: white;
-    padding: 30px; 
-    border-radius: 15px; 
-    box-shadow: 0 4px 15px rgba(65, 16, 40, 0.1); 
-    width: 100%;
-    max-width: 500px;
+.input-group {
     display: flex;
+    flex-direction: column;
+    flex-grow: 1; 
     gap: 10px;
 }
 
+#itemForm {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
 #itemInput {
-    width: 100%; 
-    padding: 10px; 
-    border: 1px solid #5f886b; 
-    border-radius: 5px;
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    box-sizing: border-box;
 }
 
 #itemInput:focus {
@@ -39,11 +53,13 @@ h1 {
 #itemForm button {
     background-color: #56b18b; 
     color: white; 
-    padding: 10px;
+    padding: 12px 15px;
     border-radius: 5px;
     border: none;
     cursor: pointer;
     font-size: 16px;
+    height: fit-content;
+    align-self: flex-start;
 }
 
 #itemForm button:hover {
@@ -52,13 +68,15 @@ h1 {
 
 #errorMessage {
     color: red; 
-    font-size: 0.7em; 
-    margin-top: 5px;
+    font-size: 0.8em; 
+    margin: 0;
+    height: 1.2em;
+    display: block;
 }
 
 #daftar {
     width: 100%;
-    max-width: 200px;
+    max-width: 300px;
     list-style: none; 
     padding: 20px;
     text-align: center;
@@ -71,11 +89,12 @@ h1 {
     margin-bottom: 10px;
     border-radius: 5px;
     color: #333; 
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .invalid {
-    border-color: red !important; 
+    border-color: red !important;
+    outline: none !important;
 }
 
 .valid {

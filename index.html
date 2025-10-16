@@ -7,19 +7,23 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-
-    <h1>Daftar Kegiatan Harian</h1>
-
-    <form id="itemForm" method="post">
-        <input type="text" id="itemInput" placeholder="udah ngapain aja hari ini?">
+    <div class="container">
         
-        <span id="errorMessage"></span>
+        <h1>Daftar Kegiatan Harian</h1>
         
-        <button type="submit">Tambah</button>
-    </form>
+        <form id="itemForm" method="post">
+
+            <div class="input-group">
+                <input type="text" id="itemInput" placeholder="udah ngapain aja hari ini?">
+                <span id="errorMessage"></span>
+            </div>
+            
+            <button type="submit">Tambah</button>
+    
+        </form>
+    </div>
 
     <ul id="daftar"></ul>
-
     <script src="script.js"></script>
 </body>
 </html>
